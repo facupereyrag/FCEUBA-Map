@@ -5,9 +5,8 @@ import {
   useColorModeValue,
   ResponsiveValue,
 } from "@chakra-ui/react";
-import { GraphContext, UserContext } from "../../MapContext";
+import { GraphContext } from "../../MapContext";
 import MateriaDisplay from "./MateriaDisplay";
-import PadronInput from "./PadronInput";
 import DropdownCarreras from "./DropdownCarreras";
 import UserMenu from "./UserMenu";
 import React from "react";
@@ -18,7 +17,6 @@ import { Property } from "csstype";
 // Si no, muestra un input para loguearse (o un menu del usuario loguead) y
 //  un dropdown para elegir las carrera
 const Header = () => {
-  const logged = true;
   const { displayedNode } = React.useContext(GraphContext);
   const CommonProps = {
     height: { base: "8.7rem", md: "4.5rem" },
@@ -54,7 +52,7 @@ const Header = () => {
       </ScaleFade>
       {!displayedNode && (
         <Flex {...CommonProps} {...(!displayedNode && FlexProps)}>
-          {logged ? <UserMenu /> : <PadronInput />}
+          <UserMenu />
           <DropdownCarreras />
         </Flex>
       )}
