@@ -17,7 +17,6 @@ import {
   ResponsiveValue,
   useToast,
 } from "@chakra-ui/react";
-import { BiLogOut } from "react-icons/bi";
 import { Property } from "csstype";
 import { FaSave, FaUndo } from "react-icons/fa";
 import { GraphContext, UserContext } from "../../MapContext";
@@ -41,7 +40,7 @@ const TooltipProps = {
 // Es un botoncito de settings donde esta el padron, arriba a la izquierda de la app
 // Tambien botones para guardar el grafo, y reiniciar los cuatrimestres planeados
 const UserMenu = () => {
-  const { logout, user } = React.useContext(UserContext);
+  const { user } = React.useContext(UserContext);
 
   const {
     saveGraph,
@@ -126,9 +125,7 @@ const UserMenu = () => {
             </MenuOptionGroup>
           )}
 
-          <MenuItem onClick={logout} icon={<BiLogOut size={"1.8em"} />}>
-            <strong>Cerrar Sesión</strong>
-          </MenuItem>
+          <MenuItem isDisabled>Progreso guardado en este navegador</MenuItem>
         </MenuList>
       </Menu>
       <Tooltip
