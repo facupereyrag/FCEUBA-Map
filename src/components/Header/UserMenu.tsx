@@ -71,7 +71,7 @@ const UserMenu = () => {
           {...ButtonProps}
         >
           <Text overflow="hidden" textOverflow="ellipsis">
-            {user.padron}
+            {"Progreso local"}
           </Text>
         </MenuButton>
         <MenuList>
