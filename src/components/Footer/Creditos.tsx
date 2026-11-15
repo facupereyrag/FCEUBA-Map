@@ -188,7 +188,7 @@ const Creditos = () => {
             <Flex justifyContent="space-between">
               <Text mr={4} alignSelf="center">
                 <strong>
-                  Créditos por fuera del plan: {creditosOptativas}
+                  Materias por fuera del plan: {creditosOptativas}
                 </strong>
               </Text>
               <Flex gap={2}>
@@ -215,10 +215,6 @@ const Creditos = () => {
                   hasArrow
                   label={
                     <>
-                      <Text>
-                        Los créditos por fuera del plan contabilizan como
-                        materias electivas y no influyen en el promedio.
-                      </Text>
                       <Text>
                         Pueden ser materias optativas (materias dadas en otra
                         facultad o carrera), cursos de posgrado, o créditos
