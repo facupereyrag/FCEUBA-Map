@@ -2,326 +2,369 @@
   {
     "id": "241",
     "materia": "Análisis Matemático I",
-    "creditos": 6,
+    "creditos": 1,
     "categoria": "*CBC",
-    "level": -2
+    "level": -2,
+    "horasSemanales": 6
   },
   {
     "id": "242",
     "materia": "Economía",
-    "creditos": 4,
+    "creditos": 1,
     "categoria": "*CBC",
-    "level": -2
+    "level": -2,
+    "horasSemanales": 4
   },
   {
     "id": "243",
     "materia": "Sociología",
-    "creditos": 4,
+    "creditos": 1,
     "categoria": "*CBC",
-    "level": -2
+    "level": -2,
+    "horasSemanales": 4
   },
   {
     "id": "244",
     "materia": "Metodología de las Ciencias Sociales",
-    "creditos": 4,
+    "creditos": 1,
     "categoria": "*CBC",
-    "level": -2
+    "level": -2,
+    "horasSemanales": 4
   },
   {
     "id": "245",
     "materia": "Álgebra",
-    "creditos": 4,
+    "creditos": 1,
     "categoria": "*CBC",
-    "level": -2
+    "level": -2,
+    "horasSemanales": 4
   },
   {
     "id": "246",
     "materia": "Historia Económica y Social General",
-    "creditos": 4,
+    "creditos": 1,
     "categoria": "*CBC",
-    "level": -2
+    "level": -2,
+    "horasSemanales": 4
   },
   {
     "id": "CBC",
     "materia": "Ciclo Básico Común",
-    "creditos": 0,
+    "creditos": 1,
     "categoria": "CBC",
     "level": -1,
-    "correlativas": "241-242-243-244-245-246"
+    "correlativas": "241-242-243-244-245-246",
+    "horasSemanales": 0
   },
   {
     "id": "247",
     "materia": "Teoría Contable",
-    "creditos": 6,
+    "creditos": 1,
     "categoria": "Materias Obligatorias",
     "level": 1,
-    "correlativas": "CBC"
+    "correlativas": "CBC",
+    "horasSemanales": 6
   },
   {
     "id": "248",
     "materia": "Estadística I",
-    "creditos": 6,
+    "creditos": 1,
     "categoria": "Materias Obligatorias",
     "level": 1,
-    "correlativas": "CBC"
+    "correlativas": "CBC",
+    "horasSemanales": 6
   },
   {
     "id": "249",
     "materia": "Historia Económica y Social Argentina",
-    "creditos": 4,
+    "creditos": 1,
     "categoria": "Materias Obligatorias",
     "level": 1,
-    "correlativas": "CBC"
+    "correlativas": "CBC",
+    "horasSemanales": 4
   },
   {
     "id": "250",
     "materia": "Microeconomía I",
-    "creditos": 4,
+    "creditos": 1,
     "categoria": "Materias Obligatorias",
     "level": 1,
-    "correlativas": "CBC"
+    "correlativas": "CBC",
+    "horasSemanales": 4
   },
   {
     "id": "251",
     "materia": "Instituciones de Derecho Público",
-    "creditos": 4,
+    "creditos": 1,
     "categoria": "Materias Obligatorias",
     "level": 1,
-    "correlativas": "CBC"
+    "correlativas": "CBC",
+    "horasSemanales": 4
   },
   {
     "id": "252",
     "materia": "Administración General",
-    "creditos": 4,
+    "creditos": 1,
     "categoria": "Materias Obligatorias",
     "level": 1,
-    "correlativas": "CBC"
+    "correlativas": "CBC",
+    "horasSemanales": 4
   },
   {
     "id": "273",
     "materia": "Instituciones de Derecho Privado",
-    "creditos": 4,
+    "creditos": 1,
     "categoria": "Materias Obligatorias",
     "level": 2,
-    "correlativas": "1359"
+    "correlativas": "1359",
+    "horasSemanales": 4
   },
   {
     "id": "274",
     "materia": "Sistemas Administrativos",
-    "creditos": 4,
+    "creditos": 1,
     "categoria": "Materias Obligatorias",
     "level": 2,
-    "correlativas": "252"
+    "correlativas": "252",
+    "horasSemanales": 4
   },
   {
     "id": "275",
     "materia": "Tecnología de la Información",
-    "creditos": 6,
+    "creditos": 1,
     "categoria": "Materias Obligatorias",
     "level": 2,
-    "correlativas": "274"
+    "correlativas": "274",
+    "horasSemanales": 6
   },
   {
     "id": "276",
     "materia": "Cálculo Financiero",
-    "creditos": 4,
+    "creditos": 1,
     "categoria": "Materias Obligatorias",
     "level": 2,
-    "correlativas": "248"
+    "correlativas": "248",
+    "horasSemanales": 4
   },
   {
     "id": "278",
     "materia": "Macroeconomía y Política Económica",
-    "creditos": 6,
+    "creditos": 1,
     "categoria": "Materias Obligatorias",
-    "level": 2
+    "level": 2,
+    "horasSemanales": 6
   },
   {
     "id": "279",
     "materia": "Administración Financiera",
-    "creditos": 6,
+    "creditos": 1,
     "categoria": "Materias Obligatorias",
     "level": 2,
-    "correlativas": "276"
+    "correlativas": "276",
+    "horasSemanales": 6
   },
   {
     "id": "351",
     "materia": "Sistemas Contables",
-    "creditos": 6,
+    "creditos": 1,
     "categoria": "Materias Obligatorias",
     "level": 2,
-    "correlativas": "247"
+    "correlativas": "247",
+    "horasSemanales": 6
   },
   {
     "id": "353",
     "materia": "Sistemas de Costos",
-    "creditos": 4,
+    "creditos": 1,
     "categoria": "Materias Obligatorias",
     "level": 2,
-    "correlativas": "247"
+    "correlativas": "247",
+    "horasSemanales": 4
   },
   {
     "id": "354",
     "materia": "Derecho del Trabajo y de la Seguridad Social",
-    "creditos": 4,
+    "creditos": 1,
     "categoria": "Materias Obligatorias",
     "level": 2,
-    "correlativas": "251-1359"
+    "correlativas": "251-1359",
+    "horasSemanales": 4
   },
   {
     "id": "355",
     "materia": "Auditoría",
-    "creditos": 6,
+    "creditos": 1,
     "categoria": "Materias Obligatorias",
     "level": 2,
-    "correlativas": "362-1352"
+    "correlativas": "362-1352",
+    "horasSemanales": 6
   },
   {
     "id": "356",
     "materia": "Teoría y Técnica Impositiva I",
-    "creditos": 6,
+    "creditos": 1,
     "categoria": "Materias Obligatorias",
     "level": 2,
-    "correlativas": "251-1352"
+    "correlativas": "251-1352",
+    "horasSemanales": 6
   },
   {
     "id": "357",
     "materia": "Teoría y Técnica Impositiva II",
-    "creditos": 6,
+    "creditos": 1,
     "categoria": "Materias Obligatorias",
     "level": 2,
-    "correlativas": "356"
+    "correlativas": "356",
+    "horasSemanales": 6
   },
   {
     "id": "362",
     "materia": "Gestión y Costos para Contadores",
-    "creditos": 6,
+    "creditos": 1,
     "categoria": "Materias Obligatorias",
     "level": 2,
-    "correlativas": "353"
+    "correlativas": "353",
+    "horasSemanales": 6
   },
   {
     "id": "1330",
     "materia": "Contabilidad Social y Ambiental",
-    "creditos": 2,
+    "creditos": 1,
     "categoria": "Materias Obligatorias",
     "level": 2,
-    "correlativas": "1352"
+    "correlativas": "1352",
+    "horasSemanales": 2
   },
   {
     "id": "1352",
     "materia": "Contabilidad Financiera",
-    "creditos": 6,
+    "creditos": 1,
     "categoria": "Materias Obligatorias",
     "level": 2,
-    "correlativas": "351-353"
+    "correlativas": "351-353",
+    "horasSemanales": 6
   },
   {
     "id": "1359",
     "materia": "Derecho Económico",
-    "creditos": 4,
+    "creditos": 1,
     "categoria": "Materias Obligatorias",
-    "level": 2
+    "level": 2,
+    "horasSemanales": 4
   },
   {
     "id": "1360",
     "materia": "Derecho Crediticio, Bursátil e Insolvencia",
-    "creditos": 4,
+    "creditos": 1,
     "categoria": "Materias Obligatorias",
     "level": 2,
-    "correlativas": "273-354"
+    "correlativas": "273-354",
+    "horasSemanales": 4
   },
   {
     "id": "1374",
     "materia": "Contabilidad Gubernamental y Control de Gestión",
-    "creditos": 4,
+    "creditos": 1,
     "categoria": "Materias Obligatorias",
     "level": 2,
-    "correlativas": "278-1352"
+    "correlativas": "278-1352",
+    "horasSemanales": 4
   },
   {
     "id": "721",
     "materia": "Poder Económico y Derechos Humanos",
-    "creditos": 4,
-    "categoria": "Materias Electivas"
+    "creditos": 1,
+    "categoria": "Materias Electivas",
+    "horasSemanales": 4
   },
   {
     "id": "749",
     "materia": "Administración de la Salud",
-    "creditos": 4,
+    "creditos": 1,
     "categoria": "Materias Electivas",
-    "correlativas": "274"
+    "correlativas": "274",
+    "horasSemanales": 4
   },
   {
     "id": "764",
     "materia": "Gestión en la Economía Social",
-    "creditos": 4,
+    "creditos": 1,
     "categoria": "Materias Electivas",
-    "correlativas": "274"
+    "correlativas": "274",
+    "horasSemanales": 4
   },
   {
     "id": "768",
     "materia": "Finanzas Públicas",
-    "creditos": 4,
+    "creditos": 1,
     "categoria": "Materias Electivas",
-    "correlativas": "362"
+    "correlativas": "362",
+    "horasSemanales": 4
   },
   {
     "id": "775",
     "materia": "Seminario de Sindicatura Concursal",
-    "creditos": 4,
+    "creditos": 1,
     "categoria": "Materias Electivas",
-    "correlativas": "357"
+    "correlativas": "357",
+    "horasSemanales": 4
   },
   {
     "id": "776",
     "materia": "Planeamiento y Control Presupuestario",
-    "creditos": 4,
+    "creditos": 1,
     "categoria": "Materias Electivas",
-    "correlativas": "1352"
+    "correlativas": "1352",
+    "horasSemanales": 4
   },
   {
     "id": "786",
     "materia": "Derecho de Seguros",
-    "creditos": 4,
+    "creditos": 1,
     "categoria": "Materias Electivas",
-    "correlativas": "276"
+    "correlativas": "276",
+    "horasSemanales": 4
   },
   {
     "id": "794",
     "materia": "Administración Pública",
-    "creditos": 4,
+    "creditos": 1,
     "categoria": "Materias Electivas",
-    "correlativas": "362"
+    "correlativas": "362",
+    "horasSemanales": 4
   },
   {
     "id": "1708",
     "materia": "Economía y Delito",
-    "creditos": 4,
+    "creditos": 1,
     "categoria": "Materias Electivas",
-    "correlativas": "278-276"
+    "correlativas": "278-276",
+    "horasSemanales": 4
   },
   {
     "id": "1798",
     "materia": "Contabilidad Financiera Superior",
-    "creditos": 4,
+    "creditos": 1,
     "categoria": "Materias Electivas",
-    "correlativas": "279"
+    "correlativas": "279",
+    "horasSemanales": 4
   },
   {
     "id": "1358",
     "materia": "Taller de Actuación Profesional Judicial",
-    "creditos": 4,
+    "creditos": 1,
     "categoria": "Fin de Carrera (Obligatorio)",
     "level": 3,
-    "correlativas": "355-1360"
+    "correlativas": "355-1360",
+    "horasSemanales": 4
   },
   {
     "id": "1361",
     "materia": "Taller de Práctica Profesional en Organizaciones",
-    "creditos": 6,
+    "creditos": 1,
     "categoria": "Fin de Carrera (Obligatorio)",
     "level": 3,
-    "correlativas": "273-279-355-1330"
+    "correlativas": "273-279-355-1330",
+    "horasSemanales": 6
   }
 ]

@@ -39,6 +39,7 @@ class Node implements NodeType {
   originalLevel: number;
   id: string;
   creditos: number;
+  horasSemanales: number | undefined;
   requiere: number | undefined;
   requiereCBC: boolean | undefined;
   materia: string;
@@ -56,6 +57,7 @@ class Node implements NodeType {
     // Lo declaramos especificamente porque sino TypeScript no lo reconoce
     this.categoria = node.categoria;
     this.creditos = node.creditos;
+    this.horasSemanales = node.horasSemanales;
     this.materia = node.materia;
 
     // Si en los JSONs hay un campo valido de vis.js, lo vamos a tomar

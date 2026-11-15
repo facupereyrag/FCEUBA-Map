@@ -57,7 +57,9 @@ const MateriaStatus = () => {
         <Badge width="100%" px={2} colorScheme="green" variant="outline">
           {node?.id === "CBC"
             ? `Clickealo para ver las materias!`
-            : `Otorga ${node?.creditos} créditos`}
+            : user.carrera.id === "contador-2019"
+              ? `${node?.horasSemanales ?? 0} horas semanales`
+              : `Otorga ${node?.creditos} créditos`}
         </Badge>
 
         {node?.requiere && (

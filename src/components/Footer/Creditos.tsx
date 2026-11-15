@@ -42,6 +42,8 @@ const Creditos = () => {
   const { optativas, optativasDispatch, creditos } =
     React.useContext(GraphContext);
   const [isOpen, setIsOpen] = React.useState(false);
+  const isContador = user.carrera.id === "contador-2019";
+  const unitLabel = isContador ? "Materias" : "Créditos";
 
   const electivasColor = useColorModeValue("electivas.600", "electivas.400");
 
@@ -86,11 +88,11 @@ const Creditos = () => {
           <Box w={{ base: "12ch", md: "16ch" }}>
             <Stat p="0.4em" color="white" size="sm">
               <StatLabel>
-                Créditos
+                {unitLabel}
                 <Tooltip
                   placement="right"
                   hasArrow
-                  label="Agregar créditos de optativas"
+                  label={isContador ? "Agregar materias optativas" : "Agregar créditos de optativas"}
                 >
                   <PlusSquareIcon
                     ml={1}
@@ -140,7 +142,7 @@ const Creditos = () => {
                     <Tooltip placement="top" label="Motivo" hasArrow>
                       <EditableInput px={2} width="12rem" noOfLines={1} />
                     </Tooltip>
-                    <Tooltip placement="top" label="Créditos" hasArrow>
+                    <Tooltip placement="top" label={isContador ? "Cantidad de materias" : "Créditos"} hasArrow>
                       <NumberInput
                         mx={2}
                         borderRadius={5}

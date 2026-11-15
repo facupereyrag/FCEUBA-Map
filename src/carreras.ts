@@ -45,7 +45,7 @@ export const CARRERAS: UserType.Carrera[] = [
     ano: 2019,
     graph: require("./data/contador-2019.json"),
     creditos: {
-      total: 156,
+      total: 43,
       electivas: 4,
       materias: [
         {

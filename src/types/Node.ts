@@ -16,6 +16,7 @@ export interface NodeType {
   opacity: number | undefined;
   id: string;
   creditos: number;
+  horasSemanales: number | undefined;
   requiere: number | undefined;
   requiereCBC: boolean | undefined;
   materia: string;

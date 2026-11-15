@@ -18,7 +18,7 @@ import {
   useToast,
 } from "@chakra-ui/react";
 import { Property } from "csstype";
-import { FaSave, FaUndo } from "react-icons/fa";
+import { FaSave, FaUndo, FaFileImport, FaFileExport } from "react-icons/fa";
 import { GraphContext, UserContext } from "../../MapContext";
 
 const ButtonProps = {
@@ -51,11 +51,79 @@ const UserMenu = () => {
     getNode,
   } = React.useContext(GraphContext);
   const [saving, setSaving] = React.useState(false);
+  const importInput = React.useRef<HTMLInputElement>(null);
   const toast = useToast();
+
+  const exportProgress = () => {
+    const raw = window.localStorage.getItem("fiuba-map-local-progress-v1");
+    if (!raw) {
+      toast({ status: "warning", title: "Todavía no hay datos guardados" });
+      return;
+    }
+    const blob = new Blob([raw], { type: "application/json" });
+    const url = URL.createObjectURL(blob);
+    const link = document.createElement("a");
+    link.href = url;
+    link.download = "progreso-contador-uba.json";
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+    URL.revokeObjectURL(url);
+    toast({ status: "success", title: "Copia de seguridad descargada" });
+  };
+
+  const importProgress = (file?: File) => {
+    if (!file) return;
+    const reader = new FileReader();
+    reader.onload = () => {
+      try {
+        const parsed = JSON.parse(String(reader.result));
+        if (
+          !parsed ||
+          typeof parsed !== "object" ||
+          !parsed.carreras ||
+          typeof parsed.carreras !== "object" ||
+          typeof parsed.ultimaCarrera !== "string"
+        ) {
+          throw new Error("Formato inválido");
+        }
+        parsed.padron = "local";
+        window.localStorage.setItem(
+          "fiuba-map-local-progress-v1",
+          JSON.stringify(parsed),
+        );
+        toast({
+          status: "success",
+          title: "Progreso importado",
+          description: "La aplicación se va a recargar para mostrar los datos.",
+          duration: 3000,
+        });
+        window.setTimeout(() => window.location.reload(), 900);
+      } catch {
+        toast({
+          status: "error",
+          title: "No se pudo importar el archivo",
+          description: "Elegí una copia JSON exportada desde esta aplicación.",
+          duration: 5000,
+        });
+      }
+    };
+    reader.readAsText(file);
+  };
 
   const isBeta = user.carrera.beta;
   return (
     <Box>
+      <input
+        ref={importInput}
+        type="file"
+        accept="application/json,.json"
+        style={{ display: "none" }}
+        onChange={(event) => {
+          importProgress(event.target.files?.[0]);
+          event.target.value = "";
+        }}
+      />
       <Menu
         closeOnSelect={false}
         defaultIsOpen={
@@ -126,6 +194,15 @@ const UserMenu = () => {
           )}
 
           <MenuItem isDisabled>Progreso guardado en este navegador</MenuItem>
+          <MenuItem icon={<Icon as={FaFileExport} />} onClick={exportProgress}>
+            Exportar progreso
+          </MenuItem>
+          <MenuItem
+            icon={<Icon as={FaFileImport} />}
+            onClick={() => importInput.current?.click()}
+          >
+            Importar progreso
+          </MenuItem>
         </MenuList>
       </Menu>
       <Tooltip

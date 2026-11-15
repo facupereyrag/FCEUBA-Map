@@ -35,6 +35,7 @@ export namespace UserType {
     id: string;
     materia: string;
     creditos: number;
+    horasSemanales?: number;
     categoria: string;
     level: number;
     correlativas: string | undefined;
