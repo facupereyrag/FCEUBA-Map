@@ -40,6 +40,30 @@ export const CARRERAS: UserType.Carrera[] = [
     },
   },
   {
+    id: "contador-2019",
+    link: "https://economicas.uba.ar/alumnos/contador/",
+    ano: 2019,
+    graph: require("./data/contador-2019.json"),
+    creditos: {
+      total: 156,
+      electivas: 4,
+      materias: [
+        {
+          id: "1358",
+          nombrecorto: "Taller Judicial",
+          bg: COLORS.findecarrera[50],
+          color: "findecarrera",
+        },
+        {
+          id: "1361",
+          nombrecorto: "Taller Organizaciones",
+          bg: COLORS.findecarrera[50],
+          color: "findecarrera",
+        },
+      ],
+    },
+  },
+  {
     id: "sistemas",
     link: "https://fi.uba.ar/grado/carreras/lic-en-analisis-de-sistemas/plan-de-estudios",
     ano: 2014,
@@ -743,6 +767,11 @@ export const PLANES = [
     nombre: "Ingeniería Química",
     nombrecorto: "Química",
     planes: ["quimica", "quimica-2020"],
+  },
+  {
+    nombre: "Contador Público",
+    nombrecorto: "Contador",
+    planes: ["contador-2019"],
   },
   {
     nombre: "Licenciatura en Análisis de Sistemas",
