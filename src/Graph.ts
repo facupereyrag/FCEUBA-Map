@@ -452,7 +452,9 @@ const Graph = (userContext: UserType.Context): GraphType.Context => {
     const findecarrera = getters.FinDeCarrera();
     toUpdate.push(
       ...findecarrera.map((n) => {
-        n.level = lastLevel + 1;
+        // En Contador UBA, los talleres de fin de carrera comparten la quinta
+        // columna con las últimas obligatorias, según la distribución elegida.
+        n.level = user.carrera.id === "contador-2019" ? 6 : lastLevel + 1;
         return n;
       }),
     );
@@ -687,9 +689,11 @@ const Graph = (userContext: UserType.Context): GraphType.Context => {
     const electivas = group.sort(sortByGroup);
     let counter = 0;
     let addLevel = 1;
+    // Contador UBA tiene 10 electivas: distribuirlas en dos columnas de 5.
+    const materiasPorColumna = user.carrera.id === "contador-2019" ? 5 : 7;
     electivas.forEach((n) => {
       counter += 1;
-      if (counter === 7) {
+      if (counter === materiasPorColumna) {
         counter = 0;
         addLevel += 1;
       }

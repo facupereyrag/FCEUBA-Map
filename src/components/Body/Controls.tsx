@@ -33,7 +33,7 @@ const Controls = () => {
           )}
         </Link>
       </Tooltip>
-      <Tooltip placement="top" label="FIUBA-Plan">
+      <Tooltip placement="top" label="Plan de estudios">
         <Link
           isExternal
           color={useColorModeValue("text", "textdark")}
@@ -51,7 +51,7 @@ const Controls = () => {
           </Icon>
         </Link>
       </Tooltip>
-      <Tooltip placement="top" label="FdelMazo/FIUBA-Map">
+      <Tooltip placement="top" label="Proyecto original">
         <Link isExternal href="https://github.com/fdelmazo/FIUBA-Map">
           <Icon
             boxSize={{ base: 4, md: 5 }}

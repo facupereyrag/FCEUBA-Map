@@ -115,7 +115,7 @@
     "materia": "Instituciones de Derecho Privado",
     "creditos": 1,
     "categoria": "Materias Obligatorias",
-    "level": 2,
+    "level": 3,
     "correlativas": "1359",
     "horasSemanales": 4
   },
@@ -133,7 +133,7 @@
     "materia": "Tecnología de la Información",
     "creditos": 1,
     "categoria": "Materias Obligatorias",
-    "level": 2,
+    "level": 3,
     "correlativas": "274",
     "horasSemanales": 6
   },
@@ -159,7 +159,7 @@
     "materia": "Administración Financiera",
     "creditos": 1,
     "categoria": "Materias Obligatorias",
-    "level": 2,
+    "level": 3,
     "correlativas": "276",
     "horasSemanales": 6
   },
@@ -186,7 +186,7 @@
     "materia": "Derecho del Trabajo y de la Seguridad Social",
     "creditos": 1,
     "categoria": "Materias Obligatorias",
-    "level": 2,
+    "level": 4,
     "correlativas": "251-1359",
     "horasSemanales": 4
   },
@@ -195,7 +195,7 @@
     "materia": "Auditoría",
     "creditos": 1,
     "categoria": "Materias Obligatorias",
-    "level": 2,
+    "level": 5,
     "correlativas": "362-1352",
     "horasSemanales": 6
   },
@@ -204,7 +204,7 @@
     "materia": "Teoría y Técnica Impositiva I",
     "creditos": 1,
     "categoria": "Materias Obligatorias",
-    "level": 2,
+    "level": 5,
     "correlativas": "251-1352",
     "horasSemanales": 6
   },
@@ -213,7 +213,7 @@
     "materia": "Teoría y Técnica Impositiva II",
     "creditos": 1,
     "categoria": "Materias Obligatorias",
-    "level": 2,
+    "level": 6,
     "correlativas": "356",
     "horasSemanales": 6
   },
@@ -222,7 +222,7 @@
     "materia": "Gestión y Costos para Contadores",
     "creditos": 1,
     "categoria": "Materias Obligatorias",
-    "level": 2,
+    "level": 3,
     "correlativas": "353",
     "horasSemanales": 6
   },
@@ -231,7 +231,7 @@
     "materia": "Contabilidad Social y Ambiental",
     "creditos": 1,
     "categoria": "Materias Obligatorias",
-    "level": 2,
+    "level": 4,
     "correlativas": "1352",
     "horasSemanales": 2
   },
@@ -240,7 +240,7 @@
     "materia": "Contabilidad Financiera",
     "creditos": 1,
     "categoria": "Materias Obligatorias",
-    "level": 2,
+    "level": 3,
     "correlativas": "351-353",
     "horasSemanales": 6
   },
@@ -257,7 +257,7 @@
     "materia": "Derecho Crediticio, Bursátil e Insolvencia",
     "creditos": 1,
     "categoria": "Materias Obligatorias",
-    "level": 2,
+    "level": 5,
     "correlativas": "273-354",
     "horasSemanales": 4
   },
@@ -266,7 +266,7 @@
     "materia": "Contabilidad Gubernamental y Control de Gestión",
     "creditos": 1,
     "categoria": "Materias Obligatorias",
-    "level": 2,
+    "level": 4,
     "correlativas": "278-1352",
     "horasSemanales": 4
   },
@@ -354,7 +354,7 @@
     "materia": "Taller de Actuación Profesional Judicial",
     "creditos": 1,
     "categoria": "Fin de Carrera (Obligatorio)",
-    "level": 3,
+    "level": 6,
     "correlativas": "355-1360",
     "horasSemanales": 4
   },
@@ -363,7 +363,7 @@
     "materia": "Taller de Práctica Profesional en Organizaciones",
     "creditos": 1,
     "categoria": "Fin de Carrera (Obligatorio)",
-    "level": 3,
+    "level": 6,
     "correlativas": "273-279-355-1330",
     "horasSemanales": 6
   }
